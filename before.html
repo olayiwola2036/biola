@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .circle::before{
+            content: url(rtyue);
+            background-color: blue;
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 300px;
+        }
+        .circle::after{
+            content: url('');
+            background-color:;
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            margin-left: 300px;
+            margin-top: 400px;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid red;
+        }
+    </style>
+<div class="circle"></div>
+</body>
+</html>
